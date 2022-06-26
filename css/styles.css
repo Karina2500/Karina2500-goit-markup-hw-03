@@ -1,0 +1,256 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-text-color: #2196F3;
+    --background-color: #ffffff;
+    --buttons-color: #F5F4FA;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    outline: 0;
+    outline-offset: 0;
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 14px;
+    background-color: var(--white-color);
+    color: var(--secondary-text-color);
+    letter-spacing: 0.03em;
+}
+
+
+.logo-color {
+    color: var(--accent-text-color);
+}
+
+.logo {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #000;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+.list {
+    list-style: none;
+}
+
+/* site-nav; auth-nav */
+
+.site-nav a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-text-color);
+}
+
+.site-nav .link:hover {
+    color: var(--accent-text-color);
+}
+
+.contact-nav a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+.contact-nav .link:hover {
+    color: var(--accent-text-color);
+}
+
+/* hero */
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-button {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    font-weight: 700;
+    font-size: 16px;
+    background: #2196F3;
+    line-height: 1.87;
+    letter-spacing: 00.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--background-color);
+}
+
+.hero-button .link:hover {
+    background-color: var(--accent-text-color);
+    color: var(--background-color);
+}
+
+.hero-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--background-color);
+}
+
+/* our features */
+
+.title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+}
+
+.features-title .title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+/* section */
+.section-title {
+    font-size: 36px;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+}
+
+
+/* Наша команда */
+
+.team {
+    font-size: 16px;
+    line-height: 1.18;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+.team-list {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+}
+
+/* footer */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--background-color);
+}
+
+.footer-logo-studio {
+    color: var(--accent-text-color);
+}
+
+.adress-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--background-color);
+}
+
+.element-style {
+    font-style: normal;
+}
+
+.adress a {
+    text-decoration: none;
+}
+
+.adress-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-link:hover {
+    color: var(--accent-text-color);
+}
+
+/* Portfolio part */
+
+.btn-list {
+    list-style: none;
+}
+
+.portfolio-buttons {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+.portfolio-buttons:hover {
+    background-color: var(--accent-text-color);
+    color: var(--background-color);
+}
+
+/* foto in portfolio */
+
+.portfolio-list {
+    list-style: none;
+}
+
+.portfolio-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+
+.portfolio-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.portfolio-buttons.active {
+    background-color: var(--accent-text-color);
+    color: var(--background-color);
+}
