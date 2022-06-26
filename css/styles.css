@@ -379,7 +379,7 @@ color: #000;
 }
 .btn {
     padding-top: 94px;
-    padding-bottom: 34px;
+    padding-bottom: 94px;
     text-align: center;
 }
 
@@ -417,6 +417,8 @@ color: #000;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
 
 .photo-portfolio {
@@ -427,6 +429,7 @@ color: #000;
     height: 404px;
     left: 215px;
     top: 262px;
+    flex-basis: calc(100% / 3 - 30px);
     
     background: var(--background-color);
     border: 1px solid #EEEEEE;
