@@ -106,11 +106,9 @@ color: #000;
     list-style: none;
 }
 
-.header {
-    margin-top: 40px;
-    margin-bottom: 40px;
+.section {
+    padding: 94px 0;
 }
-
 /* site-nav; auth-nav */
 .main-nav {
     display: flex;
@@ -137,6 +135,7 @@ color: #000;
 }
 
 .site-item a {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -154,8 +153,12 @@ color: #000;
     margin-left: auto;
 }
 
-.contact-nav a {
+.contact-nav .contact-item + .contact-item {
     margin-left: 50px;
+}
+
+.contact-nav a {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
@@ -174,14 +177,12 @@ color: #000;
 /* hero */
 
 .hero {
-    display: block;
+    padding: 200px 0;
     text-align: center;
-    margin-bottom: 94px;
     background-color: #2F303A;
 }
 
 .hero-button {
-    margin-bottom: 200px;
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
@@ -189,7 +190,7 @@ color: #000;
     font-size: 16px;
     background: #2196F3;
     line-height: 1.87;
-    letter-spacing: 00.06em;
+    letter-spacing: 0.06em;
     color: var(--background-color);
 }
 
@@ -203,7 +204,6 @@ color: #000;
     display: block;
     width: 696px;
     margin-bottom: 30px;
-    padding-top: 200px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 900;
@@ -215,9 +215,8 @@ color: #000;
 
 /* our features */
 .features {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 94px;
+display: flex;
+justify-content: space-between;
 }
 
 .benefits-item {
@@ -225,7 +224,6 @@ color: #000;
 }
 
 .title {
-    margin-bottom: 10px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
@@ -233,7 +231,8 @@ color: #000;
     color: var(--primary-text-color);
 }
 
-.features-title .title {
+.features-title {
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -253,18 +252,14 @@ color: #000;
 .section-item {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
 }
 
 .actives {
-    text-align: center;
-    margin-bottom: 50px;
-    padding-top: 94px;
+    padding-top: 0;
     padding-bottom: 94px;
 }
 
 .cards {
-    width: 370px;
     margin-right: 30px;
 }
 
@@ -274,8 +269,7 @@ color: #000;
 /* Наша команда */
 
 .main-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    background-color: var(--buttons-color)
 }
 
 .section-team {
@@ -285,10 +279,6 @@ color: #000;
 
 .team-item {
     margin-right: 30px;
-    width: 270px;
-    height: 368px;
-    left: 515px;
-    top: 1635px;
     background: var(--background-color);
         /* material shadow v1 */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -317,8 +307,8 @@ color: #000;
 }
 
 .team-margin {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 /* footer */
 
@@ -329,8 +319,8 @@ color: #000;
 }
 
 .footer-logo {
-    padding-bottom: 10px;
-    font-family: 'Raleway';
+    display: block;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -350,6 +340,14 @@ color: #000;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--background-color);
+}
+
+.adress-item {
+    margin-bottom: 9px;
+}
+
+.adress-item:last-child {
+    margin-bottom: 0;
 }
 
 .element-style {
@@ -377,11 +375,6 @@ color: #000;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-}
-.btn {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    text-align: center;
 }
 
 .btn-list {
@@ -416,6 +409,7 @@ color: #000;
 /* foto in portfolio */
 
 .portfolio-list {
+    padding-left: 0;
     margin-top: 0;
     list-style: none;
     display: flex;
@@ -428,12 +422,7 @@ color: #000;
     box-sizing: border-box;
     margin-right: 30px;
     margin-bottom: 30px;
-    width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 262px;
-    flex-basis: calc(100% / 3 - 30px);
-    
+    flex-basis: calc((100% - 90px)/3);
     background: var(--background-color);
     border: 1px solid #EEEEEE;
 }
@@ -442,9 +431,6 @@ color: #000;
     margin-right: 30px;
 }
 
-.photo-portfolio:nth-last-child(-n+3) {
-    margin-bottom: 0;
-}
 
 
 .portfolio-text {
